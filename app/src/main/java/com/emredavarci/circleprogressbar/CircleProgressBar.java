@@ -6,14 +6,10 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.RectF;
-import android.preference.Preference;
-import android.text.Html;
 import android.text.TextPaint;
 import android.text.TextUtils;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.View;
-import android.widget.TextView;
 
 /**
  * Created by M. Emre Davarci on 02.08.2017.
@@ -69,7 +65,7 @@ public class CircleProgressBar extends View {
 
         progressColor = ta.getColor(R.styleable.CircleProgressBar_progressColor, Color.BLUE);
         backgroundColor = ta.getColor(R.styleable.CircleProgressBar_backgroundColor, Color.GRAY);
-        strokeWidth = ta.getFloat(R.styleable.CircleProgressBar_strokeWidth, 10);
+        strokeWidth = ta.getFloat(R.styleable.CircleProgressBar_strokeThickness, 10);
         backgroundWidth = ta.getFloat(R.styleable.CircleProgressBar_backgroundWidth, 10);
         roundedCorners = ta.getBoolean(R.styleable.CircleProgressBar_roundedCorners, false);
         maxValue = ta.getFloat(R.styleable.CircleProgressBar_maxValue, 100);
